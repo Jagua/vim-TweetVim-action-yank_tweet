@@ -1,4 +1,4 @@
-" vim: set et fdm=marker ft=vim sts=2 sw=2 ts=2 : 
+" vim: set et fdm=marker ft=vim sts=2 sw=2 ts=2 :
 
 
 scriptencoding utf-8
