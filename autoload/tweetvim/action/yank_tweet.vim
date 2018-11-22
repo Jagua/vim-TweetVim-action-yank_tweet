@@ -14,7 +14,7 @@ endfunction
 
 
 function! tweetvim#action#yank_tweet#execute(tweet)
-  let @" =  '@' . a:tweet.user.screen_name . ': ' . a:tweet.text
+  call setreg('+', printf('@%s: %s', a:tweet.user.screen_name, a:tweet.text))
 endfunction
 
 
