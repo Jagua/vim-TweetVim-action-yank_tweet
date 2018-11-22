@@ -8,12 +8,12 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-function! tweetvim#action#yank#define()
+function! tweetvim#action#yank_tweet#define()
   return { 'description' : 'yank tweet' }
 endfunction
 
 
-function! tweetvim#action#yank#execute(tweet)
+function! tweetvim#action#yank_tweet#execute(tweet)
   let @" =  '@' . a:tweet.user.screen_name . ': ' . a:tweet.text
 endfunction
 
